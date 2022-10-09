@@ -43,31 +43,208 @@ The name of the cafe is CAMPER CAFE. Add an h1 element within your body element.
 </html>
 
 Step 6
-
+To let visitors know the cafe was founded in 2020, add a p element below the h1 element with the text Est. 2020.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+  </head>
+  <body>
+    <h1>CAMPER CAFE</h1>
+    <p>Est. 2020</p>
+  </body>
+</html>
 
 Step 7
-
+Since the p element added in the previous step provides supplemental information about the cafe, nest both the h1 and p elements in a header element.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+  </head>
+  <body>
+   <header> <h1>CAMPER CAFE</h1>
+    <p>Est. 2020</p>
+    </header>
+  </body>
+</html>
 
 Step 8
-
+It's time to add some menu content. Add a main element below the existing header element. It will eventually contain pricing information about coffee and desserts offered by the cafe.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+  </head>
+  <body>
+    <header>
+      <h1>CAMPER CAFE</h1>
+      <p>Est. 2020</p>
+    </header>
+    <main></main>
+  </body>
+</html>
 
 Step 9
-
+There will be two sections on the menu, one for coffees and one for desserts. Add a section element within the main element so you have a place to put all the coffees available.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+  </head>
+  <body>
+    <header>
+      <h1>CAMPER CAFE</h1>
+      <p>Est. 2020</p>
+    </header>
+    <main><section></section>
+    </main>
+  </body>
+</html>
 
 Step 10
-
+Create an h2 element in the section element and give it the text Coffee.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+  </head>
+  <body>
+    <header>
+      <h1>CAMPER CAFE</h1>
+      <p>Est. 2020</p>
+    </header>
+    <main>
+      <section><h2>Coffee</h2>
+      </section>
+    </main>
+  </body>
+</html>
 
 Step 11
+Up until now, you have been limited regarding the presentation and appearance of the content you create. To start taking control, add a style element within the head element.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+    <style></style>
+  </head>
+  <body>
+    <header>
+      <h1>CAMPER CAFE</h1>
+      <p>Est. 2020</p>
+    </header>
+    <main>
+      <section>
+        <h2>Coffee</h2>
+      </section>
+    </main>
+  </body>
+</html>
+
 Step 12
+You can add style to an element by specifying it in the style element and setting a property for it like this:
+element {
+ property: value;
+}
+Center your h1 element by setting its text-align property to the value center.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+    <style>
+h1 { text-align:center; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CAMPER CAFE</h1>
+      <p>Est. 2020</p>
+    </header>
+    <main>
+      <section>
+        <h2>Coffee</h2>
+      </section>
+    </main>
+  </body>
+</html>
+
 Step 13
+In the previous step, you used a type selector to style the h1 element. Go ahead and center the h2 and p elements with a new type selector for each one.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      h2{
+        text-align: center;
+      }
+      p{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CAMPER CAFE</h1>
+      <p>Est. 2020</p>
+    </header>
+    <main>
+      <section>
+        <h2>Coffee</h2>
+      </section>
+    </main>
+  </body>
+</html>
+
 Step 14
+You now have three type selectors with the exact same styling. You can add the same group of styles to many elements by creating a list of selectors. Each selector is separated with commas like this:
+
+selector1, selector2 {
+  property: value;
+}
+Delete the three existing type selectors and replace them with one selector list that centers the text for the h1, h2, and p elements.
+  <style>
+      h1,h2,p{
+        property: center;
+      }
+    </style>
+
 Step 15
+You have styled three elements by writing CSS inside the style tags. This works, but since there will be many more styles, it's best to put all the styles in a separate file and link to it.
+We have created a separate styles.css file for you and switched the editor view to that file. You can change between files with the tabs at the top of the editor.
+Start by rewriting the styles you have created into the styles.css file. Make sure to exclude the opening and closing style tags.
+
+
 Step 16
+
+
 Step 17
+
+
 Step 18
+
+
 Step 19
+
+
 Step 20
+
+
 Step 21
+
+
 Step 22
 Step 23
 Step 24
