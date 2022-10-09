@@ -1,13 +1,62 @@
 Step 1
+As you learned in the last few steps of the Cat Photo App, there is a basic structure needed to start building your web page.
+Add the <!DOCTYPE html> tag, and an html element with a lang attribute of en.
+1 <!DOCTYPE html><html lang="en"></html>
+
 Step 2
-Step 3
+Add a head element within the html element, so you can add a title element. The title element's text should be Cafe Menu.
+<html>
+<head><title>Cafe Menu></title</head>
+</html>
+
+Step 3 
+The title is one of several elements that provide extra information not visible on the web page, but it is useful for search engines or how the page gets displayed.
+Inside the head element, nest a meta element with an attribute named charset set to the value utf-8 to tell the browser how to encode characters for the page. Note that meta elements are self-closing.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cafe Menu</title><meta charset="utf-8"
+  </head>
+</html>
+
 Step 4
+To prepare to create some actual content, add a body element below the head element.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+  </head>
+  <body></body>
+</html>
+
 Step 5
+The name of the cafe is CAMPER CAFE. Add an h1 element within your body element. Give it the name of the cafe in capitalized letters to make it stand out.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+  </head>
+  <body><h1>CAMPER CAFE</h1>
+  </body>
+</html>
+
 Step 6
+
+
 Step 7
+
+
 Step 8
+
+
 Step 9
+
+
 Step 10
+
+
 Step 11
 Step 12
 Step 13
