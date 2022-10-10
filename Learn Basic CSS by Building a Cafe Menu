@@ -556,42 +556,277 @@ Starting below the existing coffee/price pair, add the following coffee and pric
 </html>
 
 Step 33
-
-
+The flavors and prices are currently stacked on top of each other and centered with their respective p elements. It would be nice if the flavor was on the left and the price was on the right.
+Add the class name flavor to the French Vanilla p element.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="menu">
+      <header>
+        <h1>CAMPER CAFE</h1>
+        <p>Est. 2020</p>
+      </header>
+      <main>
+        <section>
+          <h2>Coffee</h2>
+          <article>
+           <p class="flavor">French Vanilla</p>
+            <p>3.00</p>
+          </article>
+          <article>
+            <p>Caramel Macchiato</p>
+            <p>3.75</p>
+          </article>
+          <article>
+            <p>Pumpkin Spice</p>
+            <p>3.50</p>
+          </article>
+          <article>
+            <p>Hazelnut</p>
+            <p>4.00</p>
+          </article>
+          <article>
+            <p>Mocha</p>
+            <p>4.50</p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
 
 Step 34
-
-
+Using your new flavor class as a selector, set the text-align property's value to left.
+.flavor{
+  text-align:left;
+}
 
 Step 35
-
-
+Next, you want to align the price to the right. Add a class named price to your p element that has 3.00 as its text.
+<p class="price">3.00</p>
 
 Step 36
+Now align the text to the right for the elements with the price class.
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flavor {
+  text-align: left;
+}
+
+.price{
+  text-align:right;
+}
+
 Step 37
+That is kind of what you want, but now it would be nice if the flavor and price were on the same line. p elements are block-level elements, so they take up the entire width of their parent element.
+To get them on the same line, you need to apply some styling to the p elements, so they behave more like inline elements. Add a class attribute with the value item to the first article element under the Coffee heading.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="menu">
+      <header>
+        <h1>CAMPER CAFE</h1>
+        <p>Est. 2020</p>
+      </header>
+      <main>
+        <section>
+          <h2>Coffee</h2>
+          <article class="item">
+            <p class="flavor">French Vanilla</p>
+            <p class="price">3.00</p>
+          </article>
+          <article>
+            <p>Caramel Macchiato</p>
+            <p>3.75</p>
+          </article>
+          <article>
+            <p>Pumpkin Spice</p>
+            <p>3.50</p>
+          </article>
+          <article>
+            <p>Hazelnut</p>
+            <p>4.00</p>
+          </article>
+          <article>
+            <p>Mocha</p>
+            <p>4.50</p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
+
 Step 38
+The p elements are nested in an article element with the class attribute of item. You can style all the p elements nested anywhere in elements with a class named item like this:
+.item p { }
+Using the above selector, add a display property with value inline-block so the p elements behave more like inline elements.
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item p {display:inline-block}
+
+.flavor {
+  text-align: left;
+}
+
+.price {
+  text-align: right;
+}
+
 Step 39
+That's closer, but the price didn't stay over on the right. This is because inline-block elements only take up the width of their content. To spread them out, add a width property to the flavor and price class selectors that have a value of 50% each.
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item p {
+  display: inline-block;
+}
+
+.flavor {
+  text-align: left;
+  width:50%;
+}
+
+.price {
+  text-align: right;
+  width:50%;
+}
+
 Step 40
+Well that did not work. Styling the p elements as inline-block and placing them on separate lines in the code creates an extra space to the right of the first p element, causing the second one to shift to the next line. One way to fix this is to make each p element's width a little less than 50%.
+Change the width value to 49% for each class to see what happens.
+
+
 Step 41
+
+
+
 Step 42
+
+
+
 Step 43
+
+
+
 Step 44
+
+
+
 Step 45
+
+
+
 Step 46
+
+
+
 Step 47
+
+
+
 Step 48
+
+
+
 Step 49
+
+
+
 Step 50
+
+
+
 Step 51
+
+
+
 Step 52
+
+
+
 Step 53
+
+
+
 Step 54
+
+
+
 Step 55
+
+
+
 Step 56
+
+
+
 Step 57
+
+
+
 Step 58
+
+
+
 Step 59
+
+
+
 Step 60
+
+
+
 Step 61
 Step 62
 Step 63
