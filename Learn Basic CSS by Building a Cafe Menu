@@ -299,27 +299,274 @@ Add the following within the head element:
 
 Step 19
 The text is centered again so the link to the CSS file is working. Add another style to the file that changes the background-color property to brown for the body element.
+body {
+  background-color: brown;
+}
+h1, h2, p {
+  text-align: center;
+}
 
 Step 20
-
+That brown background makes it hard to read the text. Change the body element's background color to be burlywood so it has some color but you are still be able to read the text.
+body {
+  background-color: burlywood;
+}
+h1, h2, p {
+  text-align: center;
+}
 
 Step 21
-
+The div element is used mainly for design layout purposes unlike the other content elements you have used so far. Add a div element inside the body element and then move all the other elements inside the new div.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div>
+    <header>
+      <h1>CAMPER CAFE</h1>
+      <p>Est. 2020</p>
+    </header>
+    <main>
+      <section>
+        <h2>Coffee</h2>
+      </section>
+    </main>
+    </div>
+  </body>
+</html>
 
 Step 22
+The goal now is to make the div not take up the entire width of the page. The CSS width property is perfect for this. Create a new type selector in the style sheet that gives your div element a width of 300px.
+body {
+  background-color: burlywood;
+}
+
+h1, h2, p, {
+  text-align: center;
+}
+div {
+  width: 300px;
+}
+
 Step 23
+In your style sheet, comment out the line containing the background-color property and value, so you can see the effect of only styling div element. This will make the background white again.
+body {
+  /*background-color: burlywood;*/
+}
+h1, h2, p {
+  text-align: center;
+}
+div {
+  width: 300px;
+}
+
 Step 24
+Now use the existing div selector to set the background color of the div element to be burlywood.
+body {
+  /*
+  background-color: burlywood;
+  */
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+div {
+  background-color:burlywood;
+  width: 300px;
+}
+
 Step 25
+Now it's easy to see that the text is centered inside the div element. Currently, the width of the div element is specified in pixels (px). Change the width property's value to be 80%, to make it 80% the width of its parent element (body).
+body {
+  /*
+  background-color: burlywood;
+  */
+}
+
+h1, h2, p {
+  text-align: center;
+}
+div {
+  width: 80%;
+  background-color: burlywood;
+}
+
 Step 26
+Next, you want to center the div horizontally. You can do this by setting its margin-left and margin-right properties to auto. Think of the margin as invisible space around an element. Using these two margin properties, center the div element within the body element.
+body {
+  /*
+  background-color: burlywood;
+  */
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+div {
+  width: 80%;
+  background-color: burlywood;
+   margin-left: auto;
+  margin-right: auto;
+}
+
 Step 27
+So far you have been using type selectors to style elements. A class selector is defined by a name with a dot directly in front of it, like this:
+.class-name {
+  styles
+}
+Change the existing div selector into a class selector by replacing div with a class named menu.
+body {
+  /*
+  background-color: burlywood;
+  */
+}
+h1, h2, p {
+  text-align: center;
+}
+.menu {
+ class
+}
+
 Step 28
+To apply the class's styling to the div element, add a class attribute to the div element's opening tag and set its value to menu.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="menu">
+
 Step 29
+Since the cafe's main product for sale is coffee, you could use an image of coffee beans for the background of the page.
+Delete the comment and its contents inside the body type selector. Now add a background-image property and set its value to url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg).
+body {
+  background-image:url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg)
+}
+
 Step 30
+It’s looking good. Time to start adding some menu items. Add an empty article element under the Coffee heading. It will contain a flavor and price of each coffee you currently offer.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="menu">
+      <header>
+        <h1>CAMPER CAFE</h1>
+        <p>Est. 2020</p>
+      </header>
+      <main>
+        <section>
+          <h2>Coffee</h2>
+          <article></article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
+
 Step 31
+article elements commonly contain multiple elements that have related information. In this case, it will contain a coffee flavor and a price for that flavor. Nest two p elements inside your article element. The first one's text should be French Vanilla, and the second's text 3.00.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="menu">
+      <header>
+        <h1>CAMPER CAFE</h1>
+        <p>Est. 2020</p>
+      </header>
+      <main>
+        <section>
+          <h2>Coffee</h2>
+          <article>
+            <p>French Vanilla</p>
+            <p>3.00</p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
+
 Step 32
+Starting below the existing coffee/price pair, add the following coffee and prices using article elements with two nested p elements inside each. As before, the first p element's text should contain the coffee flavor and the second p element's text should contain the price.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="menu">
+      <header>
+        <h1>CAMPER CAFE</h1>
+        <p>Est. 2020</p>
+      </header>
+      <main>
+        <section>
+          <h2>Coffee</h2>
+          <article>
+            <p>French Vanilla</p>
+            <p>3.00</p>
+            </article>
+            <article>
+            <p>Caramel Macchiato</p>
+            <p>3.75</p>
+            </article>
+            <article>
+            <p>Pumpkin Spice</p>
+            <p>3.50</p>
+            </article>
+            <article>
+            <p>Hazelnut</p>
+            <p>4.00</p>
+            </article>
+            <article>
+            <p>Mocha</p>
+            <p>4.50</p>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
+
 Step 33
+
+
+
 Step 34
+
+
+
 Step 35
+
+
+
 Step 36
 Step 37
 Step 38
