@@ -252,13 +252,53 @@ Now that you have the CSS in the styles.css file, go ahead and remove the style 
 
 Step 17
 Now you need to link the styles.css file so the styles will be applied again. Nest a self-closing link element in the head element. Give it a rel attribute value stylesheet and an href attribute value of styles.css.
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+    <link rel="stylesheet" href="styles.css"
+  </head>
+  <body>
+    <header>
+      <h1>CAMPER CAFE</h1>
+      <p>Est. 2020</p>
+    </header>
+    <main>
+      <section>
+        <h2>Coffee</h2>
+      </section>
+    </main>
+  </body>
+</html>
 
 Step 18
-
+For the styling of the page to look similar on mobile as it does on a desktop or laptop, you need to add a meta element with a special content attribute.
+Add the following within the head element:
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Cafe Menu</title>
+    <link href="styles.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <h1>CAMPER CAFE</h1>
+      <p>Est. 2020</p>
+    </header>
+    <main>
+      <section>
+        <h2>Coffee</h2>
+      </section>
+    </main>
+  </body>
+</html>
 
 Step 19
-
+The text is centered again so the link to the CSS file is working. Add another style to the file that changes the background-color property to brown for the body element.
 
 Step 20
 
