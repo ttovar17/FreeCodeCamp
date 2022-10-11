@@ -1,6 +1,10 @@
 # myfreeCodeCamp
+
 New Responsive Web Design
-Learn HTML by building a Cat Photo App
+
+Learn HTML by Building a Cat Photo App, Project Completed
+
+I built my own Cat Photo App. HTML tags give a webpage its structure by using HTML tags to add photos, buttons, and other elements to the webpage.
 
 Step 1
 <html>
