@@ -1,6 +1,4 @@
-# myfreeCodeCamp
-
-New Responsive Web Design
+# myfreeCodeCamp / New Responsive Web Design
 
 Learn HTML by Building a Cat Photo App, Project Completed
 
