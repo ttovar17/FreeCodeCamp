@@ -1,3 +1,5 @@
+#please keep in mind that freeCodeCamp can update their page at any time which may alter, change or affect the order of code below#
+
 Step 1
 As you learned in the last few steps of the Cat Photo App, there is a basic structure needed to start building your web page.
 Add the <!DOCTYPE html> tag, and an html element with a lang attribute of en.
@@ -43,7 +45,6 @@ It's time to add some menu content. Add a main element within the existing body 
   </main>
   </body>
 </html>
-
 
  Step 6
  The name of the cafe is CAMPER CAFE. Add an h1 element within your body element. Give it the name of the cafe in capitalized letters to make it stand out.
@@ -191,9 +192,8 @@ In the previous step, you used a type selector to style the h1 element. Go ahead
   </body>
 </html>
 
-Step 14
+Step 13
 You now have three type selectors with the exact same styling. You can add the same group of styles to many elements by creating a list of selectors. Each selector is separated with commas like this:
-
 selector1, selector2 {
   property: value;
 }
@@ -204,7 +204,7 @@ Delete the three existing type selectors and replace them with one selector list
       }
     </style>
 
-Step 15
+Step 14
 You have styled three elements by writing CSS inside the style tags. This works, but since there will be many more styles, it's best to put all the styles in a separate file and link to it.
 We have created a separate styles.css file for you and switched the editor view to that file. You can change between files with the tabs at the top of the editor.
 Start by rewriting the styles you have created into the styles.css file. Make sure to exclude the opening and closing style tags.
@@ -212,7 +212,7 @@ Start by rewriting the styles you have created into the styles.css file. Make su
         text-align: center;
       }
 
-Step 16
+Step 15
 Now that you have the CSS in the styles.css file, go ahead and remove the style element and all its content. Once it is removed, the text that was centered will shift back to the left.
 <!DOCTYPE html>
 <html lang="en">
@@ -233,7 +233,7 @@ Now that you have the CSS in the styles.css file, go ahead and remove the style 
   </body>
 </html>
 
-Step 17
+Step 16
 Now you need to link the styles.css file so the styles will be applied again. Nest a self-closing link element in the head element. Give it a rel attribute value stylesheet and an href attribute value of styles.css.
 <!DOCTYPE html>
 <html lang="en">
@@ -255,7 +255,7 @@ Now you need to link the styles.css file so the styles will be applied again. Ne
   </body>
 </html>
 
-Step 18
+Step 17
 For the styling of the page to look similar on mobile as it does on a desktop or laptop, you need to add a meta element with a special content attribute.
 Add the following within the head element:
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -280,7 +280,7 @@ Add the following within the head element:
   </body>
 </html>
 
-Step 19
+Step 18
 The text is centered again so the link to the CSS file is working. Add another style to the file that changes the background-color property to brown for the body element.
 body {
   background-color: brown;
@@ -289,7 +289,7 @@ h1, h2, p {
   text-align: center;
 }
 
-Step 20
+Step 19
 That brown background makes it hard to read the text. Change the body element's background color to be burlywood so it has some color but you are still be able to read the text.
 body {
   background-color: burlywood;
@@ -298,7 +298,7 @@ h1, h2, p {
   text-align: center;
 }
 
-Step 21
+Step 20
 The div element is used mainly for design layout purposes unlike the other content elements you have used so far. Add a div element inside the body element and then move all the other elements inside the new div.
 <!DOCTYPE html>
 <html lang="en">
