@@ -3,7 +3,7 @@
 Step 1
 As you learned in the last few steps of the Cat Photo App, there is a basic structure needed to start building your web page.
 Add the <!DOCTYPE html> tag, and an html element with a lang attribute of en.
-1 <!DOCTYPE html><html lang="en"></html>
+<!DOCTYPE html><html lang="en"></html>
 
 Step 2
 Add a head element within the html element, so you can add a title element. The title element's text should be Cafe Menu.
@@ -323,7 +323,7 @@ The div element is used mainly for design layout purposes unlike the other conte
   </body>
 </html>
 
-Step 22
+Step 21
 The goal now is to make the div not take up the entire width of the page. The CSS width property is perfect for this. Create a new type selector in the style sheet that gives your div element a width of 300px.
 body {
   background-color: burlywood;
@@ -336,7 +336,9 @@ div {
   width: 300px;
 }
 
-Step 23
+Step 22
+Comments in CSS look like this:
+/* comment here */
 In your style sheet, comment out the line containing the background-color property and value, so you can see the effect of only styling div element. This will make the background white again.
 body {
   /*background-color: burlywood;*/
@@ -348,7 +350,7 @@ div {
   width: 300px;
 }
 
-Step 24
+Step 23
 Now use the existing div selector to set the background color of the div element to be burlywood.
 body {
   /*
@@ -1653,34 +1655,406 @@ h1, h2 {
   width: 25%
 }
 
-
 Step 63
-
-
+Add a footer element below the main element, where you can add some additional information.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="menu">
+      <main>
+        <h1>CAMPER CAFE</h1>
+        <p class="established">Est. 2020</p>
+        <section>
+          <h2>Coffee</h2>
+          <article class="item">
+            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Mocha</p><p class="price">4.50</p>
+          </article>
+        </section>
+        <section>
+          <h2>Desserts</h2>
+          <article class="item">
+            <p class="dessert">Donut</p><p class="price">1.50</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cheesecake</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
+          </article>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>
 
 Step 64
-
-
+Inside the footer, add a p element. Then, nest an anchor (a) element in the p that links to https://www.freecodecamp.org and has the text Visit our website.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="menu">
+      <main>
+        <h1>CAMPER CAFE</h1>
+        <p class="established">Est. 2020</p>
+        <section>
+          <h2>Coffee</h2>
+          <article class="item">
+            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Mocha</p><p class="price">4.50</p>
+          </article>
+        </section>
+        <section>
+          <h2>Desserts</h2>
+          <article class="item">
+            <p class="dessert">Donut</p><p class="price">1.50</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cheesecake</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
+          </article>
+        </section>
+      </main>
+      <footer>
+        <p>
+         <a href="https://www.freecodecamp.org">Visit our website</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
 
 Step 65
-
-
+Add a second p element below the one with the link and give it the text 123 Free Code Camp Drive.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="menu">
+      <main>
+        <h1>CAMPER CAFE</h1>
+        <p class="established">Est. 2020</p>
+        <section>
+          <h2>Coffee</h2>
+          <article class="item">
+            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Mocha</p><p class="price">4.50</p>
+          </article>
+        </section>
+        <section>
+          <h2>Desserts</h2>
+          <article class="item">
+            <p class="dessert">Donut</p><p class="price">1.50</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cheesecake</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
+          </article>
+        </section>
+      </main>
+      <footer>
+        <p>
+          <a href="https://www.freecodecamp.org" target="_blank">Visit our website</a>
+        </p>
+        <p>123 Free Code Camp Drive</p>
+      </footer>
+    </div>
+  </body>
+</html>
 
 Step 66
-
-
+You can use an hr element to display a divider between sections of different content.
+First, add an hr element between the p element with the class established and the first section element. Note that hr elements are self closing.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="menu">
+      <main>
+        <h1>CAMPER CAFE</h1>
+        <p class="established">Est. 2020</p><hr></>
+        <section>
+          <h2>Coffee</h2>
+          <article class="item">
+            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Mocha</p><p class="price">4.50</p>
+          </article>
+        </section>
+        <section>
+          <h2>Desserts</h2>
+          <article class="item">
+            <p class="dessert">Donut</p><p class="price">1.50</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cheesecake</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
+          </article>
+        </section>
+      </main>
+      <footer>
+        <p>
+          <a href="https://www.freecodecamp.org" target="_blank">Visit our website</a>
+        </p>
+        <p>123 Free Code Camp Drive</p>
+      </footer>
+    </div>
+  </body>
+</html>
 
 Step 67
+The default properties of an hr element will make it appear as a thin light grey line. You can change the height of the line by specifying a value for the height property.
 
+Change the height of the hr element to be 3px.
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.established {
+  font-style: italic;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+hr {
+height:3px;
+hr
+}
+
+h1, h2 {
+  font-family: Impact, serif;
+}
+
+.item p {
+  display: inline-block;
+}
+
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%
+}
 
 
 Step 68
+Change the background color of the hr element to brown so it matches the color of the coffee beans.
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+}
 
+h1 {
+  font-size: 40px;
+}
 
+h2 {
+  font-size: 30px;
+}
+
+.established {
+  font-style: italic;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+hr {
+  height: 3px;
+  background-color: brown;
+}
+
+h1, h2 {
+  font-family: Impact, serif;
+}
+
+.item p {
+  display: inline-block;
+}
+
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%
+}
 
 Step 69
+Notice the grey color along the edges of the line. Those edges are known as borders. Each side of an element can have a different color or they can all be the same.
+Make all the edges of the hr element the same color as the background of it using the border-color property.
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  font-family: sans-serif;
+}
 
+h1 {
+  font-size: 40px;
+}
 
+h2 {
+  font-size: 30px;
+}
+
+.established {
+  font-style: italic;
+}
+
+h1, h2, p {
+  text-align: center;
+}
+
+.menu {
+  width: 80%;
+  background-color: burlywood;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+hr {
+  height: 3px;
+  background-color: brown;
+  border-color: brown;
+}
+
+h1, h2 {
+  font-family: Impact, serif;
+}
+
+.item p {
+  display: inline-block;
+}
+
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+}
+
+.price {
+  text-align: right;
+  width: 25%
+}
 
 Step 70
 
