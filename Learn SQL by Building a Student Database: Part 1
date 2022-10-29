@@ -1,7 +1,8 @@
 Learn SQL by Building a Student Database: Part 1
 SQL as we know it is the language for communicating with a relational database.
 In this 140-lesson course, I created a Bash script that uses SQL to enter information about computer science students into PostgreSQL.
-Open new terminal echo hello SQL
+
+Opened new terminal echo hello SQL
 Started 2 .csv files (titles & values)
 Added info into Postgresql DB (view by using \l)
 Created new DB named students CREATE DATABASE students;
@@ -17,5 +18,7 @@ The students.csv file has 4 fields
 Made a column for each as an ID column
 Added column to students table named student_id
 ALTER TABLE students ADD COLUMN student_id SERIAL PRIMARY KEY;
-First column
-
+First column in students.csv is first_name
+Added column ALTER TABLE students ADD COLUMN first_name VARCHAR(50) NOT NULL;
+Second column is last_name
+Added column ALTER TABLE students ADD COLUMN last_name VARCHAR(50) NOT NULL;
